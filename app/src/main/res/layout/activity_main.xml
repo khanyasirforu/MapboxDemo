@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".MainActivity">
+
+
+        <FrameLayout
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+<View
+  android:background="#5532CD32"
+    android:id="@+id/padding_view"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"/>
+
+    <LinearLayout
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+        <Button
+          android:onClick="setPadding"
+          android:text="Set Padding"
+          android:id="@+id/set_map_padding"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+        <Button
+          android:onClick="addMarker"
+          android:text="Add Marker"
+          android:id="@+id/add_marker"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+        <Button
+          android:onClick="addPolyline"
+          android:text="Add Polyline"
+          android:id="@+id/add_polyline"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+        <Button
+          android:onClick="clear"
+          android:text="Clear"
+          android:id="@+id/clear_map"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>
